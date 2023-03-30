@@ -66,7 +66,7 @@ def find_pure(size, gene):
         for j in range(6):
             x.append(gene[i].get_gene(j, 'x'))
             y.append(gene[i].get_gene(j, 'y'))
-        print(x, y)
+        # print(x, y)
         if x == target and y == target:
             res += 1
     return res
