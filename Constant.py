@@ -21,7 +21,6 @@ class Gene:
             self.genes.append({'x': allele_1, 'y': allele_2})
             self.num_genes += 1
 
-
     def get_gene(self, gene_num, allele):
         if gene_num < self.num_genes:
             return self.genes[gene_num][allele]
@@ -30,10 +29,3 @@ class Gene:
 
     def division(self, gene_num):
         return random.choice([self.genes[gene_num]['x'], self.genes[gene_num]['y']])
-
-
-'''
-a = Gene()
-a.add_gene(1, 0)
-print(a.division(0))
-'''
