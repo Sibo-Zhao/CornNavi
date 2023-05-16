@@ -36,8 +36,8 @@ def adjust_poss(g1, g2, g3):
     return poss
 
 
-def a():
-    with open('../file_ignore/population.pickle', 'rb') as f:
+def c():
+    with open('population.pickle', 'rb') as f:
         p = pickle.load(f)
 
     arr = np.zeros((len(p), len(p), len(p)))
@@ -47,8 +47,7 @@ def a():
             for k in range(len(p)):
                 arr[i][j][k] = adjust_poss(p[i], p[j], p[k])
 
-    with open('rules.bin', 'wb') as f:
-        arr.tofile(f)
+    np.save('rules.npy', arr)
 
 
 if __name__ == '__main__':
