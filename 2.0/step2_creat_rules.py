@@ -37,7 +37,7 @@ def adjust_poss(g1, g2, g3):
 
 
 def c():
-    with open('population.pickle', 'rb') as f:
+    with open('../file_ignore/population.pickle', 'rb') as f:
         p = pickle.load(f)
 
     arr = np.zeros((len(p), len(p), len(p)))
@@ -52,3 +52,4 @@ def c():
 
 if __name__ == '__main__':
     print("sunoneeye")
+    print(find_poss(0, 2, 2))

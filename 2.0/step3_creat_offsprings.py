@@ -5,7 +5,7 @@ import pickle
 
 def b():
 
-    with open('population.pickle', 'rb') as f:
+    with open('../file_ignore/population.pickle', 'rb') as f:
         p = pickle.load(f)
 
     rules = np.load('rules.npy')

@@ -19,5 +19,5 @@ def generate_population(length):
 p = generate_population(6)
 # print(len(p))
 # 729
-with open("population.pickle", 'wb') as f:
+with open("../file_ignore/population.pickle", 'wb') as f:
     pickle.dump(p, f)
